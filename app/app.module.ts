@@ -10,6 +10,10 @@ import { TabsPage } from './pages/tabs/tabs';
 // servicios
 import { DeseosService } from './services/deseos.service';
 
+// importar rutas
+import { AppRoutingModule } from './app.routes';
+//import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -19,7 +23,8 @@ import { DeseosService } from './services/deseos.service';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AppRoutingModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
