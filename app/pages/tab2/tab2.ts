@@ -8,7 +8,6 @@ import { DeseosService } from '../../services/deseos.service';
 export class Tab2Page {
 
   constructor(public deseosService: DeseosService) {
-
   }
 
 }
