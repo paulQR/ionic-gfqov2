@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from './pages/about/about';
-import { HomePage } from './pages/home/home';
+import { Tab1Page } from './pages/tab1/tab1';
+import { Tab2Page } from './pages/tab2/tab2';
 import { TabsPage } from './pages/tabs/tabs';
 
 // servicios
@@ -13,8 +13,8 @@ import { DeseosService } from './services/deseos.service';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    HomePage,
+    Tab2Page,
+    Tab1Page,
     TabsPage
   ],
   imports: [
@@ -24,8 +24,8 @@ import { DeseosService } from './services/deseos.service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    HomePage,
+    Tab2Page,
+    Tab1Page,
     TabsPage
   ],
   providers: [DeseosService,
